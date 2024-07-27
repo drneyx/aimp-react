@@ -1,0 +1,28 @@
+/* SearchResultsPage.css */
+.sidebar {
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.filter-section h5 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.filter-section .form-check {
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

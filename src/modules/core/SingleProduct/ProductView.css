@@ -1,0 +1,79 @@
+/* ProductView.css */
+
+.product-view {
+    padding: 20px;
+}
+
+.product-view .product-details {
+    max-width: 100%;
+}
+
+.product-view .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-view .rounded-circle {
+    border-radius: 50%;
+}
+
+.product-view .quantity-card-wrapper button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-view .black-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.product-view .social-share button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add more custom styles as needed */
+
+.product-title{
+    font-size: small;
+}
+
+.product-original-price{
+    color: gray;
+    text-decoration: line-through;
+    font-size: medium;
+}
+
+.product-discount-price{
+    color: red;
+    font-size: large;
+}
+
+.product-description{
+    color: gray;
+    text-align: justify;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.product-infos{
+    font-size: small;
+}
+
+.quantity-card-wrapper{
+    height: 50px;
+}
+
+.product-love{
+    width: 60px;
+}
+
+.add-cart-btn{
+    color: black;
+    background-color: darkgreen !important;
+}

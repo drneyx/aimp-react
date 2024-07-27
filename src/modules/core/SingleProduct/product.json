@@ -1,0 +1,37 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Product One",
+        "description": "This is a sample product description.",
+        "price": 99.99,
+        "image": "product1.jpg",
+        "category": "Electronics"
+      },
+      {
+        "id": 2,
+        "name": "Product Two",
+        "description": "Another sample product description.",
+        "price": 149.99,
+        "image": "product2.jpg",
+        "category": "Fashion"
+      },
+      {
+        "id": 3,
+        "name": "Product Three",
+        "description": "Yet another sample product description.",
+        "price": 79.99,
+        "image": "product3.jpg",
+        "category": "Home & Kitchen"
+      },
+      {
+        "id": 4,
+        "name": "Product Four",
+        "description": "Sample product description for the fourth product.",
+        "price": 199.99,
+        "image": "product4.jpg",
+        "category": "Sports & Outdoors"
+      }
+    ]
+  }
+  

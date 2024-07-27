@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+.carousel-container {
+    /* min-height: 80vh;
+    max-height: 80vh; */
+    height: 100vh;
+    background-color: #f7f5eb;
+}
+
+.carousel-content {
+    max-width: 650px;
+    z-index: 2;
+    margin-top: 15rem !important;
+}
+
+.carousel-header {
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.carousel-title {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    color: rgb(7, 28, 31);
+    line-height: 1;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    font-family: 'Rajdhani', serif
+}
+
+.carousel-subtext {
+    max-width: 450px;
+    padding-left: 10px;
+    border-left: 1px solid rgb(87, 100, 102);
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.btn-shop {
+    background-color: rgb(128, 181, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 17px 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.carousel-image {
+    width: 50%;
+    position: absolute;
+    right: 150px;
+    top: auto;
+    bottom: 100px;
+    height: 70%;
+}
+
+.carousel-image img {
+    /* height: 100%; */
+    object-fit: contain;
+    object-position: 50% 50%;
+    margin-left: auto;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+.genuine-products {
+    color: rgb(128, 181, 0);
+    font-family: 'Rajdhani, sans-serif';
+    font-weight: 700;
+    line-height: 20.8px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.animate__animated {
+    opacity: 1;
+    visibility: visible;
+    animation-fill-mode: both;
+}
+
+.carousel-content {
+    text-align: left;
+}
+
+.carousel-content.text-end {
+    text-align: right;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

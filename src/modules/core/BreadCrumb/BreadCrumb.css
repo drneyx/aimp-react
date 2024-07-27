@@ -1,0 +1,47 @@
+.breadcrumb-container {
+    background: #071c1f;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.breadcrumb-subtitle {
+    color: #80b500;
+    font-family: 'Rajdhani, sans-serif';
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb-title {
+    color: #fff;
+    font-family: 'Rajdhani, sans-serif';
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-list {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: #80b500;
+}
+
+.breadcrumb-current {
+    color: #80b500;
+    font-weight: 700;
+}
+
+.breadcrumb{
+    margin-top: 20vh !important;
+}

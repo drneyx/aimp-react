@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+.menu-banner {
+    background-color: darkgreen;
+}
+
+.menu-banner .navbar-nav .nav-item {
+    position: relative;
+}
+
+.menu-banner .mega-menu {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 800px;
+    display: none;
+    background-color: white;
+    color: darkgreen;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 8px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+    /* margin-top: 10px; */
+}
+
+.menu-banner .nav-item:hover .mega-menu {
+    display: block;
+}
+
+.menu-banner .nav-link {
+    padding: 10px 15px;
+    font-weight: 400;
+    /* font-family: 'Rajdhani', serif; */
+    /* font-size: 20px; */
+}
+
+.menu-banner .active{
+    font-weight: bold;
+}
+
+.menu-banner .mega-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-banner .mega-menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu-banner .mega-menu ul li a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.menu-banner .mega-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.list-columns{
+    display: table-cell;
+}
+.column-title{
+    margin-left: 0;
+    border-bottom: 1px dashed #ddd;
+    display: block;
+    font-weight: 600;
+    /* padding: 10px; */
+   
+}

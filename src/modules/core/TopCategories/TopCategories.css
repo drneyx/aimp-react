@@ -1,0 +1,32 @@
+.category-list3 {
+    background-color: #fff;
+}
+
+.category-card {
+    background-color: #f7f5eb;
+    border: 1px solid #d1dae0;
+    transition: all 0.3s ease;
+}
+
+.bg-wheat{
+    background-color: #f7f5eb !important;
+}
+
+.category-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.category-list3 h1 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #071c1f;
+}
+
+.category-list3 a {
+    color: #071c1f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-list3 a:hover {
+    color: #d1dae0;
+}
