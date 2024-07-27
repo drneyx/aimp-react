@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginAsync } from '../store/authSlice';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { RootState } from '../store/store';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import '../assets/css/auth.css';
@@ -17,11 +17,19 @@ const Login: React.FC = () => {
     const [password, setPassword] = useState('');
     const dispatch = useAppDispatch();
     const { loading, error } = useSelector((state: RootState) => state.auth);
+    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        dispatch(loginAsync({ username, password }));
+        dispatch(loginAsync({ username, password }))
+        .unwrap()
+        .then(() => {
+            navigate('/welcome');
+          })
     };
+
+    console.log('ERRORS');
+    console.log(error)
 
     const handleGoogleSuccess = (response: any) => {
         const token = response.credential;
@@ -40,6 +48,11 @@ const Login: React.FC = () => {
                 <div className="d-flex justify-content-center align-items-center login">
                     <div className="form-container-login">
                         <h2 className="mb-4 text-center">WELLCOME</h2>
+                        {error && (
+                            <div className='mt-2 text-center' style={{ color: 'red' }}>
+                                {error.error || 'An error occurred during login'}
+                            </div>
+                        )}
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
@@ -63,10 +76,12 @@ const Login: React.FC = () => {
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
                             </div>
-                            {error && <p className="text-danger">{error}</p>}
+
                             <button type="submit" className="btn btn-custom w-100">
                                 {loading ? 'Logging in...' : 'Login'}
                             </button>
+
+
                         </form>
                         <div className="mt-3">
                             <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
