@@ -47,12 +47,12 @@ const CartBox = () => {
                     {cart.items.map((item) => (
                         <li key={item.id} className="list-group-item d-flex align-items-center">
                             <img
-                                src={item.product.src}
-                                alt={item.product.title}
+                                src={item.product.image_cdn}
+                                alt={item.product.name}
                                 className="cart-item-image me-3" />
                             <div className="w-100 d-flex justify-content-between align-items-center">
                                 <div className="d-flex flex-column">
-                                    <h5 className="mb-1">{item.product.title}</h5>
+                                    <h5 className="mb-1">{item.product.name}</h5>
                                     <p className="mb-1">{item.product.price}</p>
                                 </div>
                                 <div className="d-flex align-items-center">

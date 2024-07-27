@@ -1,16 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-interface Product {
-    id: number;
-    src: string;
-    alt: string;
-    vendor: string;
-    title: string;
-    price: number;
-    region: string;
-    district: string;
-    href: string;
-}
+import { Product } from '../modules/core/ProductSlider/types';
 
 interface CartItem {
     id: number;

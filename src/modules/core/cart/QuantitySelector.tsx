@@ -3,18 +3,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from "../../../store/store";
 import { Button } from "react-bootstrap";
 import { addToCart, decreaseQuantity } from '../../../store/cartSlice';
+import { Product } from "../ProductSlider/types";
 
-interface Product {
-    id: number;
-    src: string;
-    alt: string;
-    vendor: string;
-    title: string;
-    price: number;
-    region: string;
-    district: string;
-    href: string;
-}
 
 const QuantitySelector: React.FC<{ product: Product }> = ({ product }) => {
     const dispatch = useAppDispatch();

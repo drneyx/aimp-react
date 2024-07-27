@@ -63,10 +63,10 @@ const Checkout: React.FC = () => {
                         {cart.items.map(item => (
                             <div key={item.id} className="row mb-3 align-items-center">
                                 <div className="col-md-2 text-center">
-                                    <img src={item.product.src} alt={item.product.alt} className="img-fluid" />
+                                    <img src={item.product.image_cdn} alt={item.product.name} className="img-fluid" />
                                 </div>
                                 <div className="col-md-2 text-center">
-                                    <p>{item.product.title}</p>
+                                    <p>{item.product.name}</p>
                                 </div>
                                 <div className="col-md-2 text-center">
                                     <p>${item.product.price.toFixed(2)}</p>
