@@ -100,9 +100,9 @@ const MenuBanner: React.FC = () => {
                                 {
                                     title: 'New Seeds',
                                     items: [
-                                        { label: 'New Vegetable Seeds', link: '#' },
-                                        { label: 'New Fruit Seeds', link: '#' },
-                                        { label: 'New Grain Seeds', link: '#' },
+                                        { label: 'New Vegetable Seeds', link: 'search-results' },
+                                        { label: 'New Fruit Seeds', link: 'search-results' },
+                                        { label: 'New Grain Seeds', link: 'search-results' },
                                     ]
                                 },
                                 {

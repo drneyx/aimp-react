@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SecondBanner.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
@@ -8,9 +8,16 @@ import Logo from '../../../assets/img/logo.png';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
+import CartBox from '../CartBox/CartBox';
 
 const SecondBanner: React.FC = () => {
     const cartItemCount = useSelector((state: RootState) => state.cart.items.reduce((total, item) => total + item.quantity, 0));
+
+    const [isCartVisible, setIsCartVisible] = useState(false);
+
+    const toggleCart = () => {
+        setIsCartVisible((prev) => !prev);
+    };
 
     return (
         <div className="second-banner bg-white">
@@ -52,7 +59,7 @@ const SecondBanner: React.FC = () => {
                                 </Link>
                             </div>
                             <div className="mini-cart-icon">
-                                <Link to="/checkout" className="header-icon d-flex align-items-center">
+                                <Link onClick={toggleCart} className="header-icon d-flex align-items-center" to="#">
                                     <FontAwesomeIcon icon={faCartArrowDown} />
                                     {cartItemCount > 0 && (
                                         <span className="cart-counter position-absolute top-0 start-100 translate-middle badge rounded-pill">
@@ -60,7 +67,10 @@ const SecondBanner: React.FC = () => {
                                         </span>
                                     )}
                                 </Link>
+                                {isCartVisible && <CartBox />}
                             </div>
+                        
+                           
                         </div>
                     </div>
                 </div>
